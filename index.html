@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+        <link rel="icon" href="/favicon.ico">
+    
+    
+        
+            <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+        
+            <link rel="stylesheet" href="/css/stage.css">
+        
+            <link rel="stylesheet" href="/css/avatar-bg.css">
+        
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+<header id="header">
+    <div class="menu">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="header-main">
+        <h1><a href="/">Hexo</a></h1>
+    </div>
+    <div id="nav">
+        <div class="nav-img" id="nav-img"></div>
+        <div class="sentences">
+            时光荏苒，旦夕之间，略有遗憾，似白驹过隙，蹉跎自悟。
+        </div>
+    </div>
+</header>
+
+<div id="content-outer">
+    <div id="content-inner">
+        <div class="clearfix">
+    
+    <div id="recent-posts">
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2022/11/17/我的第一篇博客/">
+                        我的第一篇博客
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>Created</span>
+                    
+                        <time datetime="2022-11-17T11:16:03.000Z">
+                            2022-11-17
+                        </time>
+                    
+                    
+                </div>
+                
+                    <h2 id="业务模型"><a href="#业务模型" class="headerlink" title="业务模型"></a>业务模型</h2><h3 id="设计模式："><a href="#设计模式：" class="headerlink" title="设计模式："></a>设计模式：</h3><p>1.发布-订阅模式</p>
+<p>2.观察者模式</p>
+<h2 id="分类："><a href="#分类：" class="headerlink" title="分类："></a>分类：</h2><h4 id="事件驱动："><a href="#事件驱动：" class="headerlink" title="事件驱动："></a>事件驱动：</h4><p>监听一个事件，根据事件去执行回调函数</p>
+<h4 id="数据驱动："><a href="#数据驱动：" class="headerlink" title="数据驱动："></a>数据驱动：</h4><p>异步处理的时候，只考虑数据变化，不考虑事件</p>
+<p>把事件发生干的事情，变为数据修改时干的事情</p>
+<p>1.监听一个事件，不是因为事件本身而是数据变了，根据观察者定义的逻辑回调函数</p>
+<p>2.实现方式：用观察者模式去监听数据(watch vue2api)</p>
+<h3 id="实现手段："><a href="#实现手段：" class="headerlink" title="实现手段："></a><strong>实现手段：</strong></h3><p>1.Rx</p>
+<p>用法：发布-订阅</p>
+<p>订阅：不管变化是如何产生的，只管它里面有什么数据</p>
+<h6 id="Stream流-x2F-数据流"><a href="#Stream流-x2F-数据流" class="headerlink" title="Stream流&#x2F;数据流"></a><strong>Stream流&#x2F;数据流</strong></h6><h5 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h5><p>1.不断发出的数据状态</p>
+<p>stream1.pipe(stream2).listen((res)&#x3D;&gt;{})</p>
+<p>2.数据是不断变化的—时间上的数组</p>
+<p>e$:不断变化的数据流</p>
+<p>2.Promise</p>
+
+                
+                <div class="readmore">
+                    <a href="/2022/11/17/我的第一篇博客/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2022/11/17/hello-world/">
+                        Hello World
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>Created</span>
+                    
+                        <time datetime="2022-11-17T11:14:55.563Z">
+                            2022-11-17
+                        </time>
+                    
+                    
+                </div>
+                
+                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+                
+                <div class="readmore">
+                    <a href="/2022/11/17/hello-world/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        
+    </div>
+
+
+    <div id="content-aside">
+    <div class="content-aside-owner">
+        <div id="owner">
+    <div class="avatar-bg">
+        <div class="index-page">
+            <div class="banner">
+                <div class="slide slide1">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_left">
+                            <div id="canvas_left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_right">
+                            <div id="canvas_right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/"><img class="avatar" src="/images/avatar.jpg" alt=""></a>
+    <a href="/"><h3 class="author">John Doe</h3></a>
+    <h4></h4>
+    <div class="social">
+        
+            
+              <a href="https://github.com/markyong" title="github" class="fa fa-github" target="_blank"></a>
+            
+        
+            
+              <a href="#" title="weibo" class="fa fa-weibo" target="_blank"></a>
+            
+        
+    </div>
+</div>
+    </div>
+    
+        <div class="content-aside-about">
+            <h2>
+                <a href="/about">About</a>
+            </h2>
+        </div>
+    
+    <div class="content-aside-tags">
+        <h2>
+            <a href="/tags">
+                Tags
+                <sup style="font-size: 12px">
+                    [0]
+                </sup>
+            </a>
+        </h2>
+    </div>
+    
+<aside id="categories">
+    <h2>Categories</h2>
+    
+        <p>None.</p>
+    
+</aside>
+
+    
+<aside id="acchives">
+    <h2>Archives</h2>
+    
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    
+</aside>
+
+</div>
+
+</div>
+<nav id="pagination" class="clearfix">
+    <span class="page-number current">1</span>
+</nav>
+
+    </div>
+</div>
+<footer id="footer">
+    <div id="copyright">&copy; John Doe  2022</div>
+    <div id="theme">
+        Powered by <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>. Theme by <a target="_blank" rel="noopener" href="https://github.com/markyong/hexo-theme-stage">Stage</a>
+    </div>
+</footer>
+<script src="/lib/js/waterrippleeffect.min.js"></script>
+<script src="/js/header-bg.main.js"></script>
+
+    <script src="/lib/js/cav.js"></script>
+    <script src="/js/avatar-bg.main.js"></script>
+
+</body>
+</html>
